@@ -24,7 +24,7 @@ ex ()
   fi
 }
 
-export EDITOR=vim
+export EDITOR=nvim
 
 alias pacman-update='sudo pacman-mirrors --geoip'
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
@@ -78,8 +78,8 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias vim='vim'
 alias vi='vim'
-alias gds-start='sudo systemctl start openvpn-client@gds'
-alias gds-stop='sudo systemctl stop openvpn-client@gds'
+#alias gds-start='sudo systemctl start openvpn-client@gds'
+#alias gds-stop='sudo systemctl stop openvpn-client@gds'
 gitpush() {
     git add .
     git commit -m "$*"
