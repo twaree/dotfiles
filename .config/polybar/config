@@ -34,10 +34,11 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
+font-3 = FiraCode Nerd Font:size=12;1.5
 
 modules-left = i3
 modules-center = date
-modules-right = battery
+modules-right = wallpaper
 
 tray-position = right
 tray-padding = 2
@@ -381,6 +382,11 @@ menu-2-0 = power off
 menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/wallpaper]
+type = custom/script
+exec = echo ">>"
+click-left= feh -z --bg-fill /home/rajan/.local/share/wallhaven
 
 [settings]
 screenchange-reload = true
